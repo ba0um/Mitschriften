@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry} % page settings
+\usepackage{amsmath} % provides many mathematical environments & tools
+\usepackage{amsfonts} % some useful math fonts  
+\usepackage{amssymb} %some useful math symbols
+\usepackage[utf8]{inputenc} %provides a UTF8 table
+\usepackage{graphicx} %allows to use graphics
+\usepackage{float}
+\usepackage{todonotes}
+
+\setlength{\parindent}{0mm}
+
+\begin{document}
+\title{Programmierprojekt - Moeraki Kemu}
+\author{1. Treffen}
+\date{\today}
+\maketitle
+
+\section*{Ansprechpartner}
+\subsection*{Erreichbarkeiten der Betreuer} 
+\subsubsection*{Niklas}
+Mail heinsohn@informatik.uni-tuebingen.de \\
+Telefon +49 7071 29-70484 \\
+Büro C107
+\subsubsection*{Henry}
+Mail henry.foerster@student.uni-tuebingen.de\\
+Telefon +49-7071-2970480\\
+Büro C 108
+\subsection*{Bei Problemen}
+Falls Beschwerden oder Probleme auftreten sollten, insbesondere wenn sich jemand schlecht behandelt fühlt oder sonst etwas auf dem Herzen hat, dass sie oder er nicht direkt mit den Betreuern besprechen möchte, zum Beispiel weil es diese unmittelbar betrifft, dann steht Olivia zur Verfügung als Mittelsfrau. Dafür hat sie sich dankbarerweise bereit erkklärt. Sie ist erreichbar via olivia.schuele@student.uni-tuebingen.de
+
+\section*{Das Programm}
+Unser Projekt ist natürlich die Implementierung des Moeraki Kemu \\
+(Regeln unter http://www.kiehly.de/index.php/moeraki-kemu/spielbeschreibung/spielregeln). \\
+Die Programmiersprache der Wahl ist Java. Die empfohlene Entwicklungsumgebung ist Eclipse.
+\subsection*{Guter Code}
+Guter Code tut was er soll - nicht mehr und nicht weniger. Zusätzliche Funktionalität bringt Fehleranfälligkeit mit sich, daher sollte Code knapp gehalten werden.\\
+Weiterhin ist auf vernünftige, lesbare Bezeichnungen für Klassen, Methoden und Variablen zu achten.
+\subsection*{Anforderungen}
+Die gestellten Anforderungen, d.h. die Mindestvoraussetzungen, welche das Spiel final erfüllen sollte, sind folgende\\
+\begin{itemize}
+\item Timer im 2-Spieler-Modus)
+\item Möglichkeit in Laufende Spiele einzusteigen, auch als Zuschauer
+\item Turniermodus (bsp. 3 Spieler, die abwechselnd gegeneinander spielen)
+\item Trainigsmodus (1vs1 lokal)
+\item Speichern und Wiederaufnehmen von Spielen
+\item Replays von Spielen
+\item Serverseitige Highscore
+\item Regelwerk einbinden
+\item Lobby mit Stärke von Spielern, Möglichkeit andere herauszufordern
+\item optional nach 3 Monaten und abhängig vom Fortschritt: rudimentäre KI
+\end{itemize}
+\subsection*{Hauptkomponenten}
+Das Programm wird in seiner Implementierung in drei Hauptkomponenten aufgeteilt, die jeweils von 3er Teams hauptsächlich erarbeitet werden.
+\subsubsection*{GUI}
+Design, Designfunktionalität, Usabillity, etc.\\
+Verantwortliche: Jonas, Chris, Kim
+\subsubsection*{Backend}
+Speicher, Gewinnbedingungen, Logik, etc.\\
+Verantwortliche: Inge, Olivia, Felix
+\subsubsection*{Netzwerk}
+technischer Aspekt: TCP, Pakete senden/empfangen, etc.\\
+Verantwortliche: Sören, Erik, Markus
+
+\section*{Kommunikation}
+Als allumfassender zentraler Pfeiler muss und wird die Kommunikation bei einem Team dieser Größe im Vordergrund stehen. Sowohl innerhalb der Unter-Teams, als auch zwischen diesen, so insbesondere bei Neu-Implementierungen, muss die Kommunikation quantitativ und qualitativ hochwertig sein.
+\subsection*{Logbuch}
+Als ein Mittel zur Dokumentation von Problemen und deren Lösungen werden alle im Team angehalten, ein Logbuch zu führen. Hier sollen eben Probleme die beim Programmieren und Entwickeln entstehen aufgezeichnet werden. Etwaige Lösungsideen und auch die Begründungen für Entscheidungen für bestimmte Lösungen sind ebenfalls hilfreich. Diese Aufzeichnungen sollen als Hilfestellung für andere / bei sich wiederholenden Problemen unterstützend wirken.
+\subsection*{Regelmäßige Treffen}
+Mittwoch 16 Uhr, c.t. in C109 auf dem Sand\\
+Inhalte werden aktueller Stand und Ausblicke auf die Arbeit für die jeweils folgende Woche sein\\
+Weitere Treffen und Absprachen sind natürlich jederzeit möglich und gewünscht. Falls Räume dafür gebraucht werden, bitte an Niklas oder Henry wenden.
+\subsection*{Discord}
+Als Hilfestellung zur Kommunikation wird ein Discord-Server eingerichtet und beim Treffen am 03. Mai kurz vorgestellt.
+
+\section*{Ausblick und Arbeitsanweisungen}
+\subsection*{Prototyp}
+In den kommenden 4-5 Wochen soll ein erster lauffähiger Prototyp erstellt werden. Dabei ist darauf zu achten, nicht zu viele Baustellen aufzumachen und sich vor allem auf die grundlegende Funktionalität zu konzentrieren. Eine gute erste Orientierung ist der Trainingsmodus. Sollte dieses Ziel erreicht werden, winkt ein Kasten Bier!
+\subsection*{Finales Projekt}
+Das Projekt sollte gegen Vorlesungsende, je nachdem spätestens bis Mitte August fertig sein. Die Bewertung des Projektes erfolgt dann als gemeinsame Note für das Team.
+\subsection*{Einführungsvorträge}
+Beim 2. Treffen am 03. Mai gibt es einige einführende Vorträge zu Software, die wir im Laufe des Semesters nutzen werden
+\subsubsection*{Git}
+Kim wird eine kurze Einführung in Version Control am Beispiel Git geben, insbesondere mit Hinblick auf ein bestehendes Eclipse-Plugin
+\subsubsection*{JUnit}
+Inge wird eine kurze Einführung in JUnit geben, ein Framework für Unit-Tests in Java-Umgebungen
+\subsubsection*{Javadoc}
+Sören wird eine kurze Einführung in Javadoc geben, ein Dokumentations-Tool zur automatischen Generierung von html-Dateien aus Java-Code
+\subsubsection*{Discord}
+Markus wird eine kurze Einführung in Discord geben, was uns als Basis zur Kommunikation dienen soll
+
+\vfill
+Hinweis: Die Zusammenfassung des Treffens erhebt keinen Anspruch auf Vollständigkeit und soll lediglich zur Gedächtnisstütze dienen. Gerne dürfen Stellen erweitert oder korrigiert werden. 
+
+
+
+\end{document}
